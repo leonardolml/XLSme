@@ -23,7 +23,7 @@
 <body>
     <!-- header -->
     <!-- salvar cor azul: style="background-color: #243d7c;" -->
-    <nav class="navbar sticky-top navbar-blue bg-info">
+    <nav class="navbar sticky-top navbar-dark bg-success">
         <a class="navbar-brand" href="#">XLSme</a>
         <!-- tecnologias usadas-->
         <span class="navbar-text">Bootstrap + FDPF + Datepicker</span>
@@ -36,32 +36,73 @@
     <div class="container">
         <div class="row">
             <div class="col"></div>
-            <div class="col-6">
+            <div class="col-10">
                 <br>
                 <br>
                 <div class="jumbotron">
                     <form method='POST' action="PDFme.php">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome" class="form-control">
-                            <br>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" class="form-control">
-                            <br>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="text" name="telefone" class="form-control">
-                            <br>
-                        </div>
-                        <div class="form-group">
                             <label for="date">Data</label>
                             <input type="text" class="form-control" data-toggle="datepicker" name="date">
                         </div>
+                        <div class="form-group">
+                            <label for="numero">Numero</label>
+                            <input type="text" name="numero" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="origem">Origem</label>
+                            <!--                            <input type="email" name="origem" class="form-control">-->
+                            <select class="form-control" id="origem">
+                                <option>Telefone</option>
+                                <option>Email</option>
+                                <option>Sistema</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" name="descricao" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora_inicio">Hora inicio</label>
+                            <input type="text" name="hora_inicio" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="hora_fim">Hora fim</label>
+                            <input type="text" name="hora_fim" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="pendencia">Pendência</label>
+                            <input type="text" name="pendencia" class="form-control">
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="responsavel_tratativa">Responsável tratativa</label>
+                            <select class="form-control" id="responsavel_tratativa">
+                                <option>Pós-horário</option>
+                                <option>Central de Serviços</option>
+                                <option>Plantonista SAP</option>
+                                <option>Plantonista Infra</option>
+                            </select>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label for="responsavel_registro">Responsável registro</label>
+                            <select class="form-control" id="responsavel_registro">
+                                <option>Lopes, Leonardo</option>
+                                <option>Sampaio, Matheus</option>
+                                <option>Silva, Henrique</option>
+                            </select>
+                            <br>
+                        </div>
+
+
                         <br>
-                        <button type="submit" class="btn btn-info btn-block">PDFme!</button>
+                        <button type="submit" class="btn btn-success btn-block">XLSme!</button>
                     </form>
                 </div>
             </div>
