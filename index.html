@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="dist/datepicker.css">
     <!-- Datepicker -->
 
+    <!-- Classes para SUBSTITUIR -->
+    <style type="text/css">
+        .fluiEsq{
+            float: left;
+        }
+
+    </style>
+    <!-- Classes para SUBSTITUIR -->
+
 </head>
 
 <body>
@@ -35,22 +44,22 @@
     <!-- conteudo -->
     <div class="container">
         <div class="row">
-            <div class="col"></div>
-            <div class="col-10">
+            <!--<div class="col"></div>-->
+            <div class="col-12">
                 <br>
                 <br>
                 <div class="jumbotron">
                     <form method='POST' action="PDFme.php">
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="date">Data</label>
                             <input type="text" class="form-control" data-toggle="datepicker" name="date">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="numero">Numero</label>
                             <input type="text" name="numero" class="form-control">
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="origem">Origem</label>
                             <!--                            <input type="email" name="origem" class="form-control">-->
                             <select class="form-control" id="origem">
@@ -60,27 +69,27 @@
                             </select>
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="descricao">Descrição</label>
                             <input type="text" name="descricao" class="form-control">
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="hora_inicio">Hora inicio</label>
                             <input type="text" name="hora_inicio" class="form-control">
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="hora_fim">Hora fim</label>
                             <input type="text" name="hora_fim" class="form-control">
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="pendencia">Pendência</label>
                             <input type="text" name="pendencia" class="form-control">
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="responsavel_tratativa">Responsável tratativa</label>
                             <select class="form-control" id="responsavel_tratativa">
                                 <option>Pós-horário</option>
@@ -90,7 +99,7 @@
                             </select>
                             <br>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group fluiEsq">
                             <label for="responsavel_registro">Responsável registro</label>
                             <select class="form-control" id="responsavel_registro">
                                 <option>Lopes, Leonardo</option>
@@ -106,7 +115,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col"></div>
+            <!--<div class="col"></div>-->
         </div>
     </div>
     <!-- fim conteudo -->
